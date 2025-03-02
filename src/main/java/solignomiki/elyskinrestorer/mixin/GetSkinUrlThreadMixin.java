@@ -15,7 +15,7 @@ public abstract class GetSkinUrlThreadMixin extends Thread {
 	public String getSkinObject(String name) {
 		String skinObject = "";
 		try {
-			skinObject = StringUtils.getWebsiteContentAsString("http://skinsystem.ely.by/profile/" + name);
+			skinObject = StringUtils.getWebsiteContentAsString("http://ely.by/storage/skins/" + name);
 		} catch (Exception e) {
 			System.out.println("Ely.by skin not found");
 		}
